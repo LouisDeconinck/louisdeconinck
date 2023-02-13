@@ -1,25 +1,33 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+<header class="bg-indigo-600">
+  <nav class="max-w-3xl mx-auto pr-4 sm:pr-6 lg:pr-8" aria-label="Top">
+    <div
+      class="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none"
+    >
+      <div class="flex items-center">
+        <a class="text-4xl" href="#">
+          <span class="sr-only">Workflow</span>
+          📚
+        </a>
+        <div class="hidden ml-10 space-x-8 lg:block">
+          <a
+            href="#"
+            class="text-base font-medium text-white hover:text-indigo-50"
+          >
+            Prompt Engineering
+          </a>
+        </div>
+      </div>
+      <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
+        <a
+          href="#"
+          class="text-base font-medium text-white hover:text-indigo-50"
+        >
+          Prompt Engineering
+        </a>
+      </div>
+    </div>
+  </nav>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>

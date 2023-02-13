@@ -1,50 +1,378 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle =
+  "Louis Deconinck's application for Prompt Engineer and Librarian at Anthropic";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2 class="text-2xl mt-6 mb-1 font-medium" id="table-of-contents">
+    Table of Contents
+  </h2>
+  <ul class="list-disc pl-5 underline">
+    <li>
+      <a href="#cover-letter">Cover Letter</a>
+    </li>
+    <li>
+      <a href="#resume">Resume</a>
+      <ul class="list-disc pl-5">
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#prompt-examples">Prompt Examples</a>
+      <ul class="list-disc pl-5">
+        <li><a href="#chain-of-thought">Chain of Thought</a></li>
+        <li>
+          <a href="#zero-shot-chain-of-thought">Zero Shot Chain of Thought</a>
+        </li>
+        <li>
+          <a href="#exemplar-debiasing">Exemplar Debiasing</a>
+        </li>
+        <li>
+          <a href="#code-prompting">Code Prompting</a>
+        </li>
+        <li>
+          <a href="#image-prompting">Image Prompting</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h2 id="cover-letter" class="text-2xl font-medium mt-6 mb-1">Cover Letter</h2>
+  <p class="py-2">
+    As a highly creative and motivated individual with a passion for AI and its
+    impact on society, I am eager to join the team at Anthropic in the role of
+    Prompt Engineer and Librarian. With a background in both technical and
+    creative fields, I possess the unique skillset necessary to tackle the
+    challenges of prompt engineering in this exciting and evolving field.
+  </p>
+
+  <p class="py-2">
+    I have a strong background in programming and QA, and am comfortable writing
+    small Python programs to accomplish a variety of tasks. I have also spent
+    time experimenting with GPT-3 and other AI models, honing my skills in
+    prompt engineering and demonstrating my ability to get complex behaviors
+    from well-crafted prompts.
+  </p>
+
+  <p class="py-2">
+    My exceptional communication skills, combined with my love for teaching and
+    creating high-quality documentation, make me a valuable asset to any team. I
+    have a creative hacker spirit and love solving puzzles, and I approach each
+    new challenge with a holistic mindset, proactively identifying the needs of
+    an organization and finding creative solutions to even the most ambiguous
+    problems.
+  </p>
+
+  <p class="py-2">
+    I am deeply committed to making powerful technology safe and societally
+    beneficial, and I stay up-to-date with emerging research and industry trends
+    to ensure that I am always informed and equipped to anticipate risks and
+    provide actionable guidance to internal stakeholders.
+  </p>
+
+  <p class="py-2">
+    In summary, I am confident that my skills and experience make me an
+    excellent fit for the role of Prompt Engineer at Anthropic, and I am eager
+    to bring my unique combination of technical expertise and creative passion
+    to the team.
+  </p>
+  <h2 id="resume" class="text-2xl pt-2 pb-1 font-medium">Resume</h2>
+  My LinkedIn profile contains more details: <a
+    href="https://linkedin.com/louisdeconinck"
+    class="underline">https://linkedin.com/louisdeconinck</a
+  >
+  <h3 class="text-xl mt-6 pb-1" id="work-experience">Work Experience</h3>
+  <p class="mt-1 font-bold">
+    Senior Credit Risk Analyst at Argenta Bank (2022 - Present)
+  </p>
+  <ul class="list-disc pl-5">
+    <li>
+      Conducted credit risk analysis using SQL and SAS. This analysis was
+      reported to internal stake holders, the board of directors and regulatory
+      institutions. These reports covered elements such as: loan-to-value,
+      debt-to-income, environmental impact, interest only loans, mortgage
+      defaults, credit card debt, ...
+    </li>
+    <li>
+      Performed business and functional analysis during a major data migration.
+      All business data was documented by me, implementing data definitions,
+      data quality rules and data lineage diagrams using Collibra.
+    </li>
+    <li>
+      Automated various monthly reports in Excel using VBA and Power Query. My
+      solution automatically extracts macro economic data from the European
+      Central bank using a JSON API with Power Query. The data is transformed
+      and put in a monthly dashboard. This tedious process has been reduced from
+      4 hours to 10 minutes.
+    </li>
+  </ul>
+  <p class="mt-3 font-bold">
+    Professor Business Intelligence at Artevelde & Odisee University College
+    (2020 - Present)
+  </p>
+  <ul class="list-disc pl-5">
+    <li>
+      Thought over 1,000 international business management students Business
+      Intelligence using Power BI and Excel. Employed various innovative
+      educational techniques such as flipping the classroom.
+    </li>
+    <li>
+      Acted as a coach to improve students' study results and assisted them
+      throughout their internships and thesis writing.
+    </li>
+    <li>
+      Helped organize large business case study weeks where students had to work
+      on real life cases from companies. They had to develop out of the box
+      marketing strategies.
+    </li>
+  </ul>
+  <p class="mt-3 font-bold">
+    Financial Analyst at National Bank of Belgium (2019 - 2020)
+  </p>
+  <ul class="list-disc pl-5">
+    <li>
+      Purdential supervision of operational risks at major Belgian banks through
+      frequent collaboration with the European Central Bank.
+    </li>
+    <li>
+      Approved large IT projects, major M&A deals and new members of the board
+      of directors.
+    </li>
+    <li>
+      Monitored and guided banks with the implementation of the PSD2, allowing
+      for a more open and innovative banking landscape.
+    </li>
+  </ul>
+  <h3 class="text-xl mt-6 pb-1" id="education">Education</h3>
+  <p class="mt-1 font-bold">
+    Undergraduate Advanced Diploma, IT Systems Analysis & Design at Oxford
+    University (2020 - 2021)
+  </p>
+  <p>Grade: Distinction (highest possible)</p>
+  <ul class="list-disc pl-5">
+    <li>
+      Followed courses on software development, project management, and data
+      management together with international IT experts.
+    </li>
+    <li>
+      The final project consisted out of a complete software analysis and
+      project management plan for a magazine publication company aloowing them
+      to manage authors, eidtors, clients and magazines.
+    </li>
+  </ul>
+  <p class="mt-3 font-bold">
+    Master of Science, Business Administration: Finance & Risk at Ghent
+    University (2015 - 2019)
+  </p>
+  <p>Grade: Cum laude</p>
+  <ul class="list-disc pl-5">
+    <li>
+      Followed courses on business, IT, accounting, economics, marketing, HR,
+      management, math and languages.
+    </li>
+    <li>
+      My master dissertation's topic was: "Acquisition by private equity vs
+      industrial holding: impact on performance" under the supervision of Rudy
+      Aernoudt, Chief Economist of the European Commission.
+    </li>
+  </ul>
+  <h3 class="text-xl mt-6 pb-1" id="projects">Projects</h3>
+  <p class="mt-1 font-bold">AI Instagram Caption Generator (2023)</p>
+  <p>
+    Using Google Cloud Vision and OpenAI GPT-3 I created a web application in
+    NodeJS that automatically generates captions for Instagram posts. The API of
+    this tool was released and has 3 paying customers.
+  </p>
+  <p class="mt-3 font-bold">Python Data Analysis (2022)</p>
+  <p>
+    Using Python with libraries such as Pandas, Numpy, Matplotlib and Seaborn I
+    conducted two data analysis projects.
+    <ul class="list-disc pl-5">
+      <li>
+        Boat Sales: <a
+          href="https://www.kaggle.com/code/louisdeconinck/boat-sales/notebook"
+          class="underline"
+          >https://www.kaggle.com/code/louisdeconinck/boat-sales/notebook</a
+        >
+      </li>
+      <li>
+        Aviation Accidents: <a
+          href="https://www.kaggle.com/code/louisdeconinck/aviation-accidents/notebook"
+          class="underline"
+          >https://www.kaggle.com/code/louisdeconinck/aviation-accidents/notebook</a
+        >
+      </li>
+    </ul>
+  </p>
+  <p class="mt-3 font-bold">Twitch Auto Follower Chrome Extension (2022)</p>
+  <p>
+    Using Selenium and JavaScript I created a Google Chrome Extension that
+    automatically follows a list of Twitch accounts.
+  </p>
+  <p class="mt-3 font-bold">Game Analysis Tool (2021)</p>
+  <p>
+    Using PHP and JavaScript I created a web application that allowed users to
+    gain insights into their gameplay for the game Splinterlands. Blockchain
+    payments were integrated.
+  </p>
+  <p class="mt-3 font-bold">YouTube Channel (2016 - 2020)</p>
+  <p>
+    Managed and grew a YouTube mobile gaming channel to 20,000 subscribers
+    through partnerships with game developers and marketing manages.
+  </p>
+  <h3 class="text-xl mt-6 pb-1" id="certifications">Certifications</h3>
+  <ul class="list-disc pl-5">
+    <li>Azure Data Fundamentals (DP-900) by Microsoft (2022)</li>
+    <li>Professional Python Data Analyst by DataCamp (2022)</li>
+    <li>Power BI Data Analyst (PL-300) by Microsoft (2022)</li>
+    <li>Excel Expert (MO-201) by Microsoft (2021)</li>
+    <li>C2 English Proficiency by University of Cambridge (2020)</li>
+  </ul>
+  <h3 class="text-xl mt-6 pb-1" id="awards">Awards</h3>
+  <p class="mt-1 font-bold">Winner AFC Data Challange (2022)</p>
+  <p>
+    Out of 11 teams, our team won first place in the AFC Data Challenge. We
+    formulated data-driven business solutions for an online retail player using
+    Power BI & Python.
+  </p>
+  <p class="mt-3 font-bold">Winner Business Strategy Game (2019)</p>
+  <p>
+    BSG is a business simulation by McGraw-Hill. Our team was able to secure the
+    first position in our industry.
+  </p>
+
+  <h2 id="prompt-examples" class="text-2xl mt-6 mb-1 font-medium">
+    Prompt examples
+  </h2>
+  <h3 class="text-xl mt-6 pb-1" id="chain-of-thought">
+    Chain of Thought Prompting
+  </h3>
+  <p class="py-2">
+    With chain of thaught prompting we provide an example reasoning process to
+    the LLM. This way the LLM can learn to reason in a similar way.
+  </p>
+  <p class="py-2">Prompt:</p>
+  <p class="bg-gray-900 text-slate-100 p-4 rounded-md font-mono">
+    Who has the most money?<br />
+    Person 1: Starts with $100, then loses $40 and quadruples what is left.<br
+    />
+    Person 2: Starts with $50, then loses $10 and finally doubles what is left.<br
+    /><br />
+    Person 1 starts with $100<br />
+    Loses $40, so they now have $100 - $40 = $60<br />
+    Quadruples what is left, so they now have $60 * 4 = $240<br /><br />
+    Person 2 starts with $50<br />
+    Loses $10, so they now have $50 - $10 = $40<br />
+    Doubles what is left, so they now have $40 * 2 = $80<br />
+    So, Person 1 has the most money with $240.<br /><br />
+    Who has the most money?<br />
+    Person 1: Starts with $60, then loses $25 and triples what is left.<br />
+    Person 2: Starts with $40, then loses $10 and finally quadruples what is left.
+  </p>
+  <p class="py-2">Result:</p>
+  <p class="bg-gray-900 text-slate-100 p-4 rounded-md font-mono">
+    Person 1 starts with $60<br />
+    Loses $25, so they now have $60 - $25 = $35<br />
+    Triples what is left, so they now have $35 * 3 = $105<br /><br />
+    Person 2 starts with $40<br />
+    Loses $10, so they now have $40 - $10 = $30<br />
+    Quadruples what is left, so they now have $30 * 4 = $120<br /><br />
+    So, Person 2 has the most money with $120.
+  </p>
+  <h3 class="text-xl mt-6 pb-1" id="zero-shot-chain-of-thought">
+    Zero Shot Chain of Thought Prompting
+  </h3>
+  <p class="py-2">
+    With zero shot chain of thaught prompting we no longer provide a reasoning
+    example, but simply ask the LLM to reason step by step.
+  </p>
+  <p class="py-2">Prompt:</p>
+  <p class="bg-gray-900 text-slate-100 p-4 rounded-md font-mono">
+    There are two pizza's. One is 12 inches in diameter and the other is 16.
+    What is the total area of the pizza's? Let's think step by step.
+  </p>
+  <p class="py-2">Result:</p>
+  <p class="bg-gray-900 text-slate-100 p-4 rounded-md font-mono">
+    To calculate the area of a pizza, we need to know its diameter. Here's the
+    step-by-step process:<br /><br />
+    1. Find the radius of each pizza:<br />
+    For the 12-inch pizza, the radius is half the diameter, so it is 12 / 2 = 6 inches.<br
+    />
+    For the 16-inch pizza, the radius is half the diameter, so it is 16 / 2 = 8 inches.<br
+    /><br />
+    2. Calculate the area of each pizza using the formula πr^2, where r is the radius:<br
+    />
+    For the 12-inch pizza, the area is π * 6^2 = π * 36 = 36π<br />
+    For the 16-inch pizza, the area is π * 8^2 = π * 64 = 64π<br /><br />
+    3. Add the areas of the two pizza's to find the total area:<br />
+    Total area = 36π + 64π = 100π<br /><br />
+    Note that π is a mathematical constant with a value of approximately 3.14, but
+    in this calculation, it is used as an approximation. The exact value of the total
+    area is 100 * 3.14 = 314 square inches.
+  </p>
+  <h3 class="text-xl mt-6 pb-1" id="exemplar-debiasing">Exemplar Debiasing</h3>
+  <p class="py-2">
+    Provding examples to an LLM can increase the quality of results, it can
+    however also introduce bias. To prevent this we must make sure when using
+    examples that we have an even distribution and order of types of prompts.
+  </p>
+  <p class="py-2">Prompt:</p>
+  <p class="bg-gray-900 text-slate-100 p-4 rounded-md font-mono">
+    Q: I like to eat pizza.<br />
+    A: positive<br /><br />
+    Q: I read a book.<br />
+    A: neutral<br /><br />
+    Q: I am afraid of ghosts.<br />
+    A: negative<br /><br />
+    Q: I love going to the movies.<br />
+    A: positive<br /><br />
+    Q: I have biked to work.<br />
+    A: neutral<br /><br />
+    Q: I hate doing the dishes.<br />
+    A: negative<br /><br />
+    Q: I am shopping in the mall<br />
+    A:
+  </p>
+  <p class="py-2">Result:</p>
+  <p class="bg-gray-900 text-slate-100 p-4 rounded-md font-mono">neutral</p>
+  <h3 class="text-xl mt-6 pb-1" id="code-prompting">Code Prompting</h3>
+  <p class="py-2">
+    When using an LLM to write code, it is important to include what languages
+    and stack you are using, what the user interface should look like, what
+    functionality you are expecting and what responsing structure you are
+    expecting.
+  </p>
+  <p class="py-2">Prompt:</p>
+  <p class="bg-gray-900 text-slate-100 p-4 rounded-md font-mono">
+    I am building a degree to radian converter in C++. The user can select to
+    convert from degree to radian or vice versa and provides a number as input.
+    The output needs to be rounded to two decimals. Provide comments when
+    appropriate. The code should be written in a way that it can be easily
+    extended to convert from other units.
+  </p>
+  <p class="py-2">Result:</p>
+  <img src="/code-generation.png" />
+  <h3 class="text-xl mt-6 pb-1" id="image-prompting">Image Prompting</h3>
+  <p class="py-2">
+    With images we can use 1) negative terms, 2) quality boosting terms, 3)
+    repeated terms and 4) inspiration images to improve our results.
+  </p>
+  <p class="py-2">Prompt:</p>
+  <p class="bg-gray-900 text-slate-100 p-4 rounded-md font-mono">
+    a highly detailed matte painting of a person on a hill watching over a
+    colorfull valley with a giant flying bird by artgerm, by wlop, by greg
+    rutkowski, volumetric lighting, octane render, 4k resolution, trending on
+    artstation, masterpiece
+  </p>
+  <p class="py-2">Result:</p>
+  <img src="/sd-generation.png" />
+  <a
+    href="#title"
+    class="fixed bottom-10 right-10 bg-gray-900 text-slate-100 p-2 rounded-full font-mono font-black w-10 h-10 text-center align-middle border-slate-100 border-2"
+    >UP</a
+  >
+</BaseLayout>
