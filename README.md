@@ -15,7 +15,7 @@ I contribute upstream fixes, tests, documentation, and type-safety improvements 
 - **Observability & systems:** OpenTelemetry, Tailscale, Talos, and Grafana Scenes
 - **Security & file tooling:** Trail of Bits PolyFile
 
-**Contribution history:** [external pull requests](https://github.com/pulls?q=is%3Apr+author%3ALouisDeconinck+-user%3ALouisDeconinck) · [merged external pull requests](https://github.com/pulls?q=is%3Apr+author%3ALouisDeconinck+is%3Amerged+-user%3ALouisDeconinck)
+**Contribution history:** [external pull requests](https://github.com/search?q=is%3Apr+author%3ALouisDeconinck+-user%3ALouisDeconinck&type=pullrequests) · [merged external pull requests](https://github.com/search?q=is%3Apr+author%3ALouisDeconinck+is%3Amerged+-user%3ALouisDeconinck&type=pullrequests)
 
 I try to keep contributions focused: reproduce the issue, make the smallest useful change, add regression coverage where appropriate, run the project’s validation, and follow each repository’s contribution and AI-disclosure policies.
 
