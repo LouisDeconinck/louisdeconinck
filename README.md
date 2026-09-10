@@ -1,46 +1,37 @@
-# Astro Starter Kit: Minimal
+# Louis Deconinck
 
-```
-npm create astro@latest -- --template minimal
-```
+**Software engineer & data-platform builder · Belgium**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+I build data-intensive products, developer tooling, and automation. I’m a co-founder of [Signumi](https://signumi.com), where I work on company data, entity resolution, search, APIs, and developer infrastructure.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+My background spans software and data engineering, finance, and applied research. I enjoy turning well-scoped problems into small, testable changes that are easy for maintainers to review.
 
-## 🚀 Project Structure
+## Open source
 
-Inside of your Astro project, you'll see the following folders and files:
+I contribute upstream fixes, tests, documentation, and type-safety improvements across established open-source projects. Current contributions span:
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Python ecosystem:** SciPy, pip, mypy, pytest, packaging, urllib3, IPython, and Pylint
+- **Developer & data tooling:** Pyright, Ruff, Kestra, Backstage, Dagu, and Argo CD Image Updater
+- **Observability & systems:** OpenTelemetry, Tailscale, Talos, and Grafana Scenes
+- **Security & file tooling:** Trail of Bits PolyFile
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+**Contribution history:** [external pull requests](https://github.com/pulls?q=is%3Apr+author%3ALouisDeconinck+-user%3ALouisDeconinck) · [merged external pull requests](https://github.com/pulls?q=is%3Apr+author%3ALouisDeconinck+is%3Amerged+-user%3ALouisDeconinck)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+I try to keep contributions focused: reproduce the issue, make the smallest useful change, add regression coverage where appropriate, run the project’s validation, and follow each repository’s contribution and AI-disclosure policies.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## What I work on
 
-## 🧞 Commands
+- Data platforms, entity resolution, search, and large-scale data processing
+- Python, TypeScript, Rust, Go, SQL, and modern web systems
+- APIs, backend infrastructure, developer tooling, and automation
+- Observability, reliability, testing, and maintainable software
 
-All commands are run from the root of the project, from a terminal:
+## Selected work
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+- **[Signumi](https://signumi.com)** — company intelligence and data infrastructure for European private markets
+- **[cancer-data](https://github.com/LouisDeconinck/cancer-data)** — public data project
+- **[cancer-dashboard](https://github.com/LouisDeconinck/cancer-dashboard)** — public data-visualization project
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+I’m especially interested in useful open-source issues where a focused fix, stronger test coverage, or clearer documentation can remove friction for other developers.
