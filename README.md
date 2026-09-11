@@ -8,7 +8,9 @@ My background spans software and data engineering, finance, and applied research
 
 ## Open source
 
-I contribute upstream fixes, tests, documentation, and type-safety improvements across established open-source projects. Current contributions span:
+I maintain [HarnessFacts](https://github.com/LouisDeconinck/harnessfacts), an Apache-2.0 project for reproducible, evidence-backed compatibility tests across coding agents, skills, MCP, Git, and CI.
+
+I also contribute upstream fixes, tests, documentation, and type-safety improvements across established open-source projects. Current contributions span:
 
 - **Python ecosystem:** SciPy, pip, mypy, pytest, packaging, urllib3, IPython, and Pylint
 - **Developer & data tooling:** Pyright, Ruff, Kestra, Backstage, Dagu, and Argo CD Image Updater
@@ -28,6 +30,7 @@ I try to keep contributions focused: reproduce the issue, make the smallest usef
 
 ## Selected work
 
+- **[HarnessFacts](https://github.com/LouisDeconinck/harnessfacts)** — reproducible compatibility tests for coding agents and their surrounding tooling
 - **[Signumi](https://signumi.com)** — company intelligence and data infrastructure for European private markets
 - **[cancer-data](https://github.com/LouisDeconinck/cancer-data)** — public data project
 - **[cancer-dashboard](https://github.com/LouisDeconinck/cancer-dashboard)** — public data-visualization project
