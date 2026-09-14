@@ -8,9 +8,7 @@ I build data-intensive products, developer tooling, and automation. I’m a co-f
 
 I maintain [HarnessFacts](https://github.com/LouisDeconinck/harnessfacts), an open compatibility test suite for coding agents, and contribute upstream across developer tooling, infrastructure, Python, Rust, and .NET projects.
 
-I tend to work on focused bug fixes, regression coverage, reliability issues, and developer tooling. I try to reproduce the problem clearly, keep changes reviewable, add tests where appropriate, and follow each project’s contribution and AI-disclosure policies.
-
-[Open-source contributions](https://github.com/search?q=is%3Apr+author%3ALouisDeconinck+-user%3ALouisDeconinck&type=pullrequests) · [Merged contributions](https://github.com/search?q=is%3Apr+author%3ALouisDeconinck+is%3Amerged+-user%3ALouisDeconinck&type=pullrequests)
+I tend to work on focused bug fixes, regression coverage, reliability issues, and developer tooling. I try to reproduce the problem clearly, keep changes reviewable, add tests where appropriate, and follow each project’s contribution policies. [Over 100 meaningful contributions of mine have been merged](https://github.com/search?q=is%3Apr+author%3ALouisDeconinck+is%3Amerged+-user%3ALouisDeconinck&type=pullrequests)
 
 ## What I work on
 
