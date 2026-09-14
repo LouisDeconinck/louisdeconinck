@@ -1,7 +1,3 @@
-# Louis Deconinck
-
-**Software engineer & data-platform builder · Belgium**
-
 I build data-intensive products, developer tooling, and automation. I’m a co-founder of [Signumi](https://signumi.com), where I work on company data, entity resolution, search, APIs, and developer infrastructure.
 
 ## Open source
