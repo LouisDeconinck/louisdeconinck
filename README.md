@@ -4,22 +4,25 @@
 
 I build data-intensive products, developer tooling, and automation. I’m a co-founder of [Signumi](https://signumi.com), where I work on company data, entity resolution, search, APIs, and developer infrastructure.
 
-My background spans software and data engineering, finance, and applied research. I enjoy turning well-scoped problems into small, testable changes that are easy for maintainers to review.
-
 ## Open source
 
-I maintain [HarnessFacts](https://github.com/LouisDeconinck/harnessfacts), an Apache-2.0 project for reproducible, evidence-backed compatibility tests across coding agents, skills, MCP, Git, and CI.
+As of September 2026, I have **100+ merged pull requests to repositories I don’t own in the last 12 months**. I focus on small, reviewable changes: reproduce the issue, make the smallest useful fix, add regression coverage where appropriate, and run the project’s validation.
 
-I also contribute upstream fixes, tests, documentation, and type-safety improvements across established open-source projects. Current contributions span:
+**[View merged external pull requests](https://github.com/search?q=is%3Apr+author%3ALouisDeconinck+is%3Amerged+-user%3ALouisDeconinck&type=pullrequests)**
 
-- **Python ecosystem:** SciPy, pip, mypy, pytest, packaging, urllib3, IPython, and Pylint
-- **Developer & data tooling:** Pyright, Ruff, Kestra, Backstage, Dagu, and Argo CD Image Updater
-- **Observability & systems:** OpenTelemetry, Tailscale, Talos, and Grafana Scenes
-- **Security & file tooling:** Trail of Bits PolyFile
+### Selected merged upstream work
 
-**Contribution history:** [external pull requests](https://github.com/search?q=is%3Apr+author%3ALouisDeconinck+-user%3ALouisDeconinck&type=pullrequests) · [merged external pull requests](https://github.com/search?q=is%3Apr+author%3ALouisDeconinck+is%3Amerged+-user%3ALouisDeconinck&type=pullrequests)
+- **[Trail of Bits PolyFile #3519](https://github.com/trailofbits/polyfile/pull/3519)** — fixed negated regex handling in libmagic parsing and added regression coverage.
+- **[dotnet/extensions #7749](https://github.com/dotnet/extensions/pull/7749)** — fixed duplicate path separators in HTTP logging and added a regression test.
+- **[pytest-rerunfailures #367](https://github.com/pytest-dev/pytest-rerunfailures/pull/367)** — fixed rerun reporting for teardown failures and added regression coverage.
+- **[RocketMQ Rust #10605](https://github.com/mxsm/rocketmq-rust/pull/10605)** — fixed timestamp arithmetic overflow/underflow paths in broker code and strengthened boundary coverage.
+- **[Sotto #214](https://github.com/getsotto/sotto/pull/214)** — added correct UTF-8 BOM handling for dotenv parsing with LF/CRLF regression tests.
 
-I try to keep contributions focused: reproduce the issue, make the smallest useful change, add regression coverage where appropriate, run the project’s validation, and follow each repository’s contribution and AI-disclosure policies.
+I contribute across Python, TypeScript, Rust, Go, .NET, developer tooling, testing, data infrastructure, and systems projects. I follow each repository’s contribution and AI-disclosure policies and try to leave changes easier to understand and maintain than I found them.
+
+### Maintained open-source work
+
+- **[HarnessFacts](https://github.com/LouisDeconinck/harnessfacts)** — Apache-2.0 compatibility tests for coding agents, skills, MCP, Git, and CI, built around reproducible evidence rather than feature claims.
 
 ## What I work on
 
@@ -28,7 +31,7 @@ I try to keep contributions focused: reproduce the issue, make the smallest usef
 - APIs, backend infrastructure, developer tooling, and automation
 - Observability, reliability, testing, and maintainable software
 
-## Selected work
+## Selected projects
 
 - **[HarnessFacts](https://github.com/LouisDeconinck/harnessfacts)** — reproducible compatibility tests for coding agents and their surrounding tooling
 - **[Signumi](https://signumi.com)** — company intelligence and data infrastructure for European private markets
@@ -37,4 +40,4 @@ I try to keep contributions focused: reproduce the issue, make the smallest usef
 
 ---
 
-I’m especially interested in useful open-source issues where a focused fix, stronger test coverage, or clearer documentation can remove friction for other developers.
+I’m especially interested in open-source issues where a focused fix, stronger test coverage, or clearer implementation can remove friction for other developers.
